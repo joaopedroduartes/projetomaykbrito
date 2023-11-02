@@ -25,6 +25,7 @@ body {
   background: var(--bg-url) no-repeat top center/cover;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+  height: 100vh;
 }
 #container {
   height: 712px;
@@ -128,4 +129,12 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./imagem/bg-desktop.jpg.jpg);
+  }
+  .light {
+    --bg-url: url(./imagem/bg-desktop-light.jpg.jpg);
+  }
 }
